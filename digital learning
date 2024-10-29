@@ -1,0 +1,27 @@
+name = input("Enter Your Name")
+print (name, "! you are highly welcome to Digital Pedagogy")
+Subject = input('''Enter the Subject you want to learn today
+'Comp' = Computer
+'Mat' = Mathematics
+'Eng' = English''')
+if Subject.lower() == "comp":
+    print ('''Select one of the topic from these Computer Topics
+    A = Input Devices
+    B = Output Devices
+    C = Unit of Computer Storage''')
+    topic = input()
+    if topic.lower() == 'a':
+        print ('''INPUT DEVICES
+        Input Devices are the computer hardware devices 
+        that we use to input data into our computer system.
+        Example of Input Devices
+        1. Keyboard
+        2. Mouse
+        3. Scanner
+        ''')
+elif Subject.lower() == "mat":
+    print ("Select one of the topic from these Mathematics Topics")
+elif Subject.lower() == "eng":
+    print ("Select one of the topic from these English Topics")
+else:
+    Subject = input("Please check your spelling and try again")
